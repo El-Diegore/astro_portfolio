@@ -1,0 +1,31 @@
+---
+
+const PROJECTS = [
+{
+    title: 'Viajes Chile',
+    description: 'Web de viajes, creada con JS',
+    link: 'https://el-diegore.github.io/ViajesChile/',
+    github: 'https://github.com/El-Diegore/ViajesChile',
+    image: './projects/project1.webp',
+    tags: ['Jquery', 'CSS', 'Bootstrap']
+}]
+---
+{
+    PROJECTS.map(({title, description, tags, image}) =>(
+        <article>
+            <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title} </h3>
+            <p class="text-lg mb-4 text-pretty">{description} </p>
+            <ul>
+                {
+                    tags.map(tag=>(
+                        <li>
+                            {tag}
+                        </li>
+                    ))
+                }
+            </ul>
+            <img class="rounded shadow-2xl shadow-white/10" src={image} alt={`Captura de pantalla del proyecto ${title}`}>
+        </article>
+    ))
+
+}

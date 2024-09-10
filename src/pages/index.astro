@@ -9,45 +9,54 @@ import SocialPill from '../components/SocialPill.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro'
 import Briefcase from '../components/icons/Briefcase.astro';
+import CodeIcon from '../components/icons/Code.astro'
+import Projects from '../components/Projects.astro'
 ---
 
 <Layout title="Portfolio de Diego Pinto - Desarrollador y Programador Web" description="Contrata a Diego Pinto para crear tu aplicación web o móvil. Desarrollador Web." >
-	<main>
-		<SectionContainer class="py-44 pb-24">
+
+	<main class="mx-4">
+		<SectionContainer class="py-44 pb-32">
 			<img class="rounded-full size-12 mb-4" src="https://www.shareicon.net/data/512x512/2016/05/24/770137_man_512x512.png" alt="el-diegore photo">
 
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 				Hey, soy Diego <a href="https://www.linkedin.com/in/diego-pinto-pinto" target="_blank" rel="noopener">
 					<Badge>Disponible para trabajar</Badge>
 				</a> 
 			</h1>
-			<h2 class="text-2xl text-wrap">
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
 				<span>+2 años de experiencia.</span> <span class="text-yellow-200/90">Desarrollador Web.
 					</span>  <span class="text-purple-200/90">De La Serena, Chile 
 						</span> <span class="opacity-75">Certificado en JavaScript</span>
 			</h2>
 
 			
-		<nav class="flex gap-x-4 mt-8">
+		<nav class="flex gap-4 mt-8 flex-wrap">
 			<SocialPill href="https://www.linkedin.com/in/diego-pinto-pinto" > 
-				<LinkedinIcon class="size-6" />
+				<LinkedinIcon class="size-4 md:size-6" />
 				LinkedIn
 			</SocialPill>
 			<SocialPill href="https://www.github.com/el-diegore" > 
-				<GithubIcon class="size-6" />
+				<GithubIcon class="size-4 md:size-6" />
 				Github
 			</SocialPill>
-			<SocialPill href="https://www.github.com/el-diegore" > 
-				<MailIcon class="size-6" />
+			<SocialPill href="mailto:pinto.p.diego@gmail.com" > 
+				<MailIcon class="size-4 md:size-6" />
 				pinto.p.diego@gmail.com
 			</SocialPill>
 			
 		</nav>
 		</SectionContainer>
-		<SectionContainer>
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center" >
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center" >
 			<Briefcase class="size-7" /> Experiencia Laboral</h2>
 			<Experience/>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center" > <CodeIcon/>
+			 Proyectos</h2>
+			<Projects/>
 
 		</SectionContainer>
 	
