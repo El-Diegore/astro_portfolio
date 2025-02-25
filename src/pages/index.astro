@@ -13,6 +13,7 @@ import CodeIcon from '../components/icons/Code.astro'
 import Projects from '../components/Projects.astro'
 import AboutMe from '../components/AboutMe.astro';
 import ProfileMe from '../components/icons/ProfileMe.astro'
+import DownloadIcon from '../components/icons/Download.astro';
 ---
 
 <Layout title="Portfolio de Diego Pinto - Desarrollador y Programador Web" description="Contrata a Diego Pinto para crear tu aplicación web o móvil. Desarrollador Web." >
@@ -53,6 +54,10 @@ import ProfileMe from '../components/icons/ProfileMe.astro'
 			<SocialPill href="mailto:pinto.p.diego@gmail.com" > 
 				<MailIcon class="size-4 md:size-6" />
 				pinto.p.diego@gmail.com
+			</SocialPill>
+			<SocialPill href="/assets/CV_DiegoPinto.pdf" download="CV_DiegoPinto.pdf" > 
+				<DownloadIcon  class="size-4 md:size-6" />
+				Curriculum
 			</SocialPill>
 			
 		</nav>
